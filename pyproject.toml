@@ -1,0 +1,9 @@
+[project]
+name = "iikona-ner-shim"
+version = "1.6.0"
+description = "Сервис распознавания имен, организаций, адресов и дат рождения для контроля персональных данных ИИконы (Natasha)"
+requires-python = ">=3.11"
+dependencies = [
+    "natasha>=1.6",
+    "setuptools<81",
+]
