@@ -86,11 +86,11 @@ uv run python test_shim.py
 
 [ИИкона](https://github.com/andromanpro/1c-ai-connector) — расширение для работы с ИИ в 1С.
 
-<a href="https://infostart.ru/1c/articles/2814180/">
+<a href="https://infostart.ru/1c/articles/2585691/">
   <img src="https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg" alt="Инфостарт" width="140">
 </a>
 
-[Обзор ИИконы на Инфостарте](https://infostart.ru/1c/articles/2814180/).
+[ИИкона на Инфостарте — описание и файл](https://infostart.ru/1c/articles/2585691/).
 
 ## Лицензия
 
