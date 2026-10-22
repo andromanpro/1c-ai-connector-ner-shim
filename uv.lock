@@ -27,13 +27,13 @@ version = "1.6.0"
 source = { virtual = "." }
 dependencies = [
     { name = "natasha" },
-    { name = "setuptools" },
+    { name = "pymorphy2" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "natasha", specifier = ">=1.6" },
-    { name = "setuptools", specifier = "<81" },
+    { name = "pymorphy2", specifier = "==0.9.1" },
 ]
 
 [[package]]
@@ -278,15 +278,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/70/ea/0151ae55bd26699487e668a865ef43e49409025c7464569beffe1a5789f0/razdel-0.5.0.tar.gz", hash = "sha256:4334c0fdfe34d4e888cf0ed854968c9df14f0a547df909a77f4634f9ffe626e6", size = 19248, upload-time = "2020-03-26T04:27:54.331Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/15/2c/664223a3924aa6e70479f7d37220b3a658765b9cfe760b4af7ffdc50d38f/razdel-0.5.0-py3-none-any.whl", hash = "sha256:76f59691c3216b47d32fef6274c18c12d61f602f1444b7ef4b135b03801f6d37", size = 21149, upload-time = "2020-03-26T04:27:52.591Z" },
-]
-
-[[package]]
-name = "setuptools"
-version = "80.10.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/76/95/faf61eb8363f26aa7e1d762267a8d602a1b26d4f3a1e758e92cb3cb8b054/setuptools-80.10.2.tar.gz", hash = "sha256:8b0e9d10c784bf7d262c4e5ec5d4ec94127ce206e8738f29a437945fbc219b70", size = 1200343, upload-time = "2026-01-25T22:38:17.252Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/94/b8/f1f62a5e3c0ad2ff1d189590bfa4c46b4f3b6e49cef6f26c6ee4e575394d/setuptools-80.10.2-py3-none-any.whl", hash = "sha256:95b30ddfb717250edb492926c92b5221f7ef3fbcc2b07579bcd4a27da21d0173", size = 1064234, upload-time = "2026-01-25T22:38:15.216Z" },
 ]
 
 [[package]]

@@ -20,10 +20,21 @@ import os
 import re
 import sys
 import threading
-import warnings
+from importlib.metadata import entry_points
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-warnings.filterwarnings("ignore", message="pkg_resources is deprecated")
+# pymorphy2 0.9.1 uses pkg_resources only to discover dictionary entry points.
+# Use the standard API instead of retaining an obsolete setuptools runtime.
+# Keep optional name filtering consistent with iter_entry_points(group, name).
+import pymorphy2.analyzer
+
+
+def _dictionary_entry_points(group, name=None):
+    points = entry_points(group=group)
+    return points.select(name=name) if name is not None else points
+
+
+pymorphy2.analyzer._iter_entry_points = _dictionary_entry_points
 
 from natasha import (AddrExtractor, DatesExtractor, Doc, MorphVocab, NamesExtractor,  # noqa: E402
                      NewsEmbedding, NewsNERTagger, Segmenter)

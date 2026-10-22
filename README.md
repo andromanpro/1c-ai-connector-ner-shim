@@ -82,6 +82,8 @@ uv run python test_shim.py
 Красная проба тестов — `uv run python mutants_shim.py`: каждый мутант возвращает известную ошибку, и
 тесты обязаны упасть.
 
+Словари pymorphy2 обнаруживаются через стандартный `importlib.metadata`. Сервис не устанавливает устаревший setuptools ради `pkg_resources`. Распознавание, HTTP-протокол и красные пробы проверяются в GitHub Actions на Python 3.11 и 3.14, Windows и Linux.
+
 ## О проекте
 
 [ИИкона](https://github.com/andromanpro/1c-ai-connector) — расширение для работы с ИИ в 1С.

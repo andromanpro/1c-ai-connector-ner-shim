@@ -50,7 +50,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 
 def прогнать():
-    вывод = subprocess.run(["uv", "run", "python", "test_shim.py"], cwd=ЗДЕСЬ, capture_output=True,
+    вывод = subprocess.run([sys.executable, "test_shim.py"], cwd=ЗДЕСЬ, capture_output=True,
                            timeout=600).stdout.decode("utf-8", "replace")
     упали = set(re.findall(r"^СБОЙ (.+?)(?: \||$)", вывод, re.M))
     всего = len(re.findall(r"^(?:ok  |СБОЙ) ", вывод, re.M))
